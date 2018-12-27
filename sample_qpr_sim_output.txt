@@ -1,0 +1,72 @@
+  {
+    "with_firing": [
+        {
+            "input": {
+                "bin_size": 5000,
+                "employee_generators": "\"norm(50.0,50.0,5000)\"",
+                "firing_production_penalty": 2,
+                "hiring_improvement_factor": 0,
+                "id": 0,
+                "manager_review_error": 0.1,
+                "manager_veto": 0,
+                "miss_bucket_percentage": 0.05,
+                "num_evaluation_quarters": 5,
+                "num_misses_allowed": 2
+            },
+            "output": {
+                "fired_production_bin_1": "1727",
+                "fired_production_bin_2": "12067",
+                "fired_production_bin_3": "513",
+                "fired_production_bin_4": "0",
+                "fired_production_bin_5": "0",
+                "production": "3061724.765420"
+            }
+        },
+        {
+            "input": {
+                "bin_size": 5000,
+                "employee_generators": "\"norm(50.0,50.0,5000)\"",
+                "firing_production_penalty": 2,
+                "hiring_improvement_factor": 0.1,
+                "id": 1,
+                "manager_review_error": 0.1,
+                "manager_veto": 0,
+                "miss_bucket_percentage": 0.05,
+                "num_evaluation_quarters": 5,
+                "num_misses_allowed": 2
+            },
+            "output": {
+                "fired_production_bin_1": "1859",
+                "fired_production_bin_2": "11977",
+                "fired_production_bin_3": "463",
+                "fired_production_bin_4": "0",
+                "fired_production_bin_5": "0",
+                "production": "3080660.363178"
+            }
+        }
+    ],
+    "without_firing": [
+        {
+            "input": {
+                "bin_size": 5000,
+                "employee_generators": "\"norm(50.0,50.0,5000)\"",
+                "firing_production_penalty": 0,
+                "hiring_improvement_factor": 0,
+                "id": 0,
+                "manager_review_error": 0,
+                "manager_veto": 0,
+                "miss_bucket_percentage": -1,
+                "num_evaluation_quarters": 5,
+                "num_misses_allowed": 5
+            },
+            "output": {
+                "fired_production_bin_1": "0",
+                "fired_production_bin_2": "0",
+                "fired_production_bin_3": "0",
+                "fired_production_bin_4": "0",
+                "fired_production_bin_5": "0",
+                "production": "2997936.871327"
+            }
+        }
+    ]
+}
